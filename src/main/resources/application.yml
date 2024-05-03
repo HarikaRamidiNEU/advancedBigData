@@ -1,0 +1,16 @@
+server:
+  error:
+    include-message: always
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 105273435979-e5pe2d29b2aqb9fobg436djef7uiq9b2.apps.googleusercontent.com
+            client-secret: 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
+            scope: openid
+      resourceserver:
+        jwt:
+          issuer-uri: https://accounts.google.com
+          jwk-set-uri: https://www.googleapis.com/oauth2/v3/certs
